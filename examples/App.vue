@@ -1,13 +1,18 @@
 <template>
   <div id="app">
-    <xj-button type='primary'>按钮</xj-button>
+    <xj-switch v-model="active"></xj-switch>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      active: false
+    }
+  }
 }
 </script>
 
