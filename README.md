@@ -1,24 +1,10 @@
-# lxj-ui
+- 本项目是本人在校期间完成的基于vue2的ui组件库
 
-## Project setup
-```
-npm install
-```
+- 安装组件库 npm i lxj-ui
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- 全局引入
 
-### Compiles and minifies for production
-```
-npm run build
-```
+  - 	import LxjUi from 'lxj-ui' 
+  - 	import 'lxj-ui/dist/lxj-ui.css'  
+  - 	Vue.use(LxjUi)
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
