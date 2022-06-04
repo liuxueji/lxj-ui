@@ -107,7 +107,7 @@ export default {
 
       &:focus {
         outline: none;
-        border-color: #409eff;
+        border-color: #ffc300;
       }
       // input禁用样式
       &.is-disabled {
@@ -139,7 +139,7 @@ export default {
         transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 
         is-passwordVisible {
-          color: blue !important;
+          color: yellow !important;
         }
       }
     }

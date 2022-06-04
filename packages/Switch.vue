@@ -100,8 +100,8 @@ export default {
   // 选中样式
   .is-checked {
     .one-switch_core {
-      border-color: #409eff;
-      background-color: #409eff;
+      border-color: #ffc300;
+      background-color: #ffc300;
       .one-switch_button {
         transform: translateX(20px);
       }

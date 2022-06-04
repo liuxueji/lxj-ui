@@ -68,19 +68,19 @@ export default {
     border-radius: 4px;
     &:hover,
     &:hover {
-      color: #409eff;
+      color: #ffc300;
       border-color: #c6e2ff;
       background-color: #ecf5ff;
     }
   }
   .xj-button-primary {
     color: #fff;
-    background-color: #409eff;
-    border-color: #409eff;
+    background-color: #ffc300;
+    border-color: #ffc300;
     &:hover,
     &:focus {
-      background: #66b1ff;
-      background-color: #66b1ff;
+      background: #fad55d;
+      background-color: #fad55d;
       color: #fff;
     }
   }
@@ -134,16 +134,16 @@ export default {
     &:focus {
       background: #fff;
       border-color: #489eff;
-      color: #409eff;
+      color: #ffc300;
     }
   }
   .xj-button-primary.is-plain {
-    color: #409eff;
+    color: #ffc300;
     background: #ecf5ff;
     &:hover,
     &:focus {
-      background: #409eff;
-      border-color: #409eff;
+      background: #ffc300;
+      border-color: #ffc300;
       color: #fff;
     }
   }

@@ -126,15 +126,15 @@ export default {
   .one-radio.is-checked {
     .one-radio_input {
       .one-radio_inner {
-        border-color: #409eff;
-        background-color: #409eff;
+        border-color: #ffc300;
+        background-color: #ffc300;
         &:after {
           transform: translate(-50%, -50%) scale(1);
         }
       }
     }
     .one-radio_label {
-      color: #409eff;
+      color: #ffc300;
     }
   }
 </style>

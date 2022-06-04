@@ -131,15 +131,15 @@ export default {
   .one-checkbox.is-checked {
     .one-checkbox_input {
       .one-checkbox_inner {
-        background-color: #409eff;
-        border-color: #409eff;
+        background-color: #ffc300;
+        border-color: #ffc300;
       }
       &:after {
         transform: rotate(45deg) scaleY(1);
       }
     }
     .one-checkbox_label {
-      color: #409eff;
+      color: #ffc300;
     }
   }
 </style>
