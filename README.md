@@ -31,7 +31,7 @@
 
 ### 3.样式参考：
 
-![img](file://D:\前端学习笔记\个人笔记\自定义ui组件库\image\Snipaste_2022-04-05_12-56-49.png?lastModify=1649329069)
+![image-20220604161358746](https://liuxueji.oss-cn-guangzhou.aliyuncs.com/image-20220604161358746.png)
 
 # 二、dialog组件
 
@@ -61,7 +61,7 @@
 
 ### 4.样式参考：
 
-![img](file://D:\前端学习笔记\个人笔记\自定义ui组件库\image\Snipaste_2022-04-06_01-19-28.png?lastModify=1649329175)
+![image-20220604161929593](https://liuxueji.oss-cn-guangzhou.aliyuncs.com/image-20220604161929593.png)
 
 # 三、input组件
 
@@ -86,7 +86,7 @@
 
 ### 3.样式参考：
 
-![img](file://D:\前端学习笔记\个人笔记\自定义ui组件库\image\Snipaste_2022-04-06_16-23-05.png?lastModify=1649329216)
+![image-20220604162005497](https://liuxueji.oss-cn-guangzhou.aliyuncs.com/image-20220604162005497.png)
 
 # 四、switch
 
@@ -107,7 +107,7 @@
 
 ### 3.样式参考
 
-![](D:\前端学习笔记\个人笔记\自定义ui组件库\image\Snipaste_2022-04-07_19-02-25.png)
+![image-20220604162043087](https://liuxueji.oss-cn-guangzhou.aliyuncs.com/image-20220604162043087.png)
 
 # 五、radio组件
 
@@ -121,7 +121,7 @@
 
 ### 2.样式参考：
 
-![img](file://D:\前端学习笔记\个人笔记\自定义ui组件库\image\Snipaste_2022-04-07_10-02-19.png?lastModify=1649329415)
+![image-20220604162100835](https://liuxueji.oss-cn-guangzhou.aliyuncs.com/image-20220604162100835.png)
 
 # 六、radio-group组件
 
@@ -145,7 +145,7 @@
 
 ### 2.样式参考：
 
-![img](file://D:\前端学习笔记\个人笔记\自定义ui组件库\image\Snipaste_2022-04-07_10-24-25.png?lastModify=1649329708)
+![image-20220604162111752](https://liuxueji.oss-cn-guangzhou.aliyuncs.com/image-20220604162111752.png)
 
 # 八、checkout-group组件
 
@@ -169,3 +169,80 @@
 | 参数名称 | 参数描述   | 参数类型 | 默认值 |
 | :------- | :--------- | :------- | :----- |
 | label    | 表单项内容 | string   | ''     |
+
+
+
+## demo
+
+代码
+
+```
+<template>
+  <div id="app">
+    <xj-button type="primary"
+               @click="visible = true">按钮</xj-button>
+    <xj-dialog title="提示"
+               :visible.sync="visible"
+               width="30%">
+      <xj-form :model="model">
+        <xj-form-item label="用户名">
+          <xj-input placeholder="请输入用户名"
+                    v-model="model.username"
+                    clearable></xj-input>
+        </xj-form-item>
+        <xj-form-item label="密码">
+          <xj-input placeholder="请输入密码"
+                    type="password"
+                    v-model="model.userpwd"
+                    show-password></xj-input>
+        </xj-form-item>
+        <xj-form-item label="立即配送">
+          <xj-switch v-model="model.soon"></xj-switch>
+        </xj-form-item>
+        <xj-form-item label="性别">
+          <xj-radio-group v-model="model.gender">
+            <xj-radio label="1">男</xj-radio>
+            <xj-radio label="0">女</xj-radio>
+          </xj-radio-group>
+        </xj-form-item>
+        <xj-form-item label="爱好">
+          <xj-checkbox-group v-model="model.hobby">
+            <xj-checkbox label="篮球">篮球</xj-checkbox>
+            <xj-checkbox label="足球">足球</xj-checkbox>
+            <xj-checkbox label="乒乓球">乒乓球</xj-checkbox>
+          </xj-checkbox-group>
+        </xj-form-item>
+      </xj-form>
+      <template v-slot:footer>
+        <xj-button>取消</xj-button>
+        <xj-button @click="btn"
+                   type="primary">确定</xj-button>
+      </template>
+    </xj-dialog>
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: 'App',
+  data () {
+    return {
+      model: {
+        username: 'admin',
+        userpwd: '123456',
+        soon: true,
+        gender: '1',
+        hobby: ['篮球']
+      },
+      visible: false
+    }
+  }
+}
+</script>
+
+```
+
+效果
+
+![lxj-ui](https://liuxueji.oss-cn-guangzhou.aliyuncs.com/lxj-ui.gif)
