@@ -170,7 +170,17 @@
 | :------- | :--------- | :------- | :----- |
 | label    | 表单项内容 | string   | ''     |
 
+# 十一、progressBar
 
+| 参数名称   | 参数描述             | 参数类型 | 默认值 |
+| :--------- | :------------------- | :------- | :----- |
+| finishBg   | 完成部分背景色       | string   | 无     |
+| unfinishBg | 未完成部分背景色     | String   | 无     |
+| sliderBg   | 滑块背景色           | String   | 无     |
+| height     | 进度条高度，传像素值 | String   | 无     |
+| percent    | 百分数               | Number   | 0      |
+
+![progressBar](https://liuxueji.oss-cn-guangzhou.aliyuncs.com/progressBar.gif)
 
 ## demo
 

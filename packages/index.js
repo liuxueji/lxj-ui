@@ -11,6 +11,7 @@ import Switch from './Switch'
 import CheckboxGroup from './Checkbox-group'
 import Form from './Form'
 import FormItem from './Form-item'
+import ProgressBar from './ProgressBar'
 
 const components = [
   Button,
@@ -22,7 +23,8 @@ const components = [
   Switch,
   CheckboxGroup,
   Form,
-  FormItem
+  FormItem,
+  ProgressBar
 ]
 // 定义install方法
 const install = function (Vue) {
