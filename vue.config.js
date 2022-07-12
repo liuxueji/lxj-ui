@@ -18,5 +18,13 @@ module.exports = {
       .tap(options => {
         return options
       })
-  }
+  },
+  devServer: {
+    overlay: {
+      warnings: false,
+      errors: false
+    },
+  },
+  lintOnSave: false
+
 }

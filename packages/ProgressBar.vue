@@ -9,7 +9,8 @@
       <div class="progressFinish"
            :style="finishStyle">
         <!-- 滑块 -->
-        <div class="slider"></div>
+        <div class="slider"
+             v-show="flag"></div>
       </div>
     </div>
   </div>

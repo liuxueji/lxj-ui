@@ -66,11 +66,12 @@
                    @click="forward">＞</xj-button>
       </div>
     </div>
+    <xj-button @click="goWordCloud">goWordCloud</xj-button>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'App',
   data () {
@@ -124,6 +125,10 @@ export default {
     // 前进
     forward () {
       this.curSecond += 10
+    },
+    // 跳转到词云组件
+    goWordCloud () {
+      this.$router.push('./WordCloud')
     }
   },
   mounted () {

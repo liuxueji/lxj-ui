@@ -12,6 +12,7 @@ import CheckboxGroup from './Checkbox-group'
 import Form from './Form'
 import FormItem from './Form-item'
 import ProgressBar from './ProgressBar'
+import WordCloud from './WordCloud'
 
 const components = [
   Button,
@@ -24,7 +25,8 @@ const components = [
   CheckboxGroup,
   Form,
   FormItem,
-  ProgressBar
+  ProgressBar,
+  WordCloud
 ]
 // 定义install方法
 const install = function (Vue) {
