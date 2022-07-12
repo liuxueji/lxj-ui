@@ -182,6 +182,21 @@
 
 ![progressBar](https://liuxueji.oss-cn-guangzhou.aliyuncs.com/progressBar.gif)
 
+# 十二、wordCloud
+
+| 参数名称 | 参数描述       | 参数类型 | 默认值 |
+| -------- | -------------- | -------- | ------ |
+| list     | 需要展示的数据 | Array    | 无     |
+| width    | 组件宽度       | Number   | 400    |
+| height   | 组件高度       | Number   | 500    |
+| temp     | 步频           | Number   | 5      |
+| font-max | 最大文字大小   | Number   | 80     |
+| font-min | 最小文字大小   | Number   | 25     |
+
+
+
+![](https://liuxueji.oss-cn-guangzhou.aliyuncs.com/image-20220712092110957.png)
+
 ## demo
 
 代码
