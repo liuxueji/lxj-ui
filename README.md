@@ -205,7 +205,7 @@
 | y        | 纵坐标百分比   | Number   | 0.4    |
 | isShow   | 是否显示悬浮球 | Boolean  | true   |
 
-
+![floatBall](https://liuxueji.oss-cn-guangzhou.aliyuncs.com/img/floatBall.gif)
 
 ## demo
 
