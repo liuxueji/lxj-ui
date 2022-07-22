@@ -67,6 +67,7 @@
       </div>
     </div>
     <xj-button @click="goWordCloud">goWordCloud</xj-button>
+    <xj-button @click="goFloatBall">goFloatBall</xj-button>
     <router-view></router-view>
   </div>
 </template>
@@ -129,6 +130,10 @@ export default {
     // 跳转到词云组件
     goWordCloud () {
       this.$router.push('./WordCloud')
+    },
+    // 跳转到词云组件
+    goFloatBall () {
+      this.$router.push('./FloatBall')
     }
   },
   mounted () {
