@@ -124,10 +124,10 @@ export default {
       }
     },
     click () {      //悬浮窗的点击事件
-      console.log("鼠标左击事件");
+      this.$emit('click', { isShow: this.isShow, top: this.top, left: this.left });
     },
     rightClick () {
-      console.log("鼠标右击事件");
+      this.$emit('rightClick', { isShow: this.isShow, top: this.top, left: this.left })
 
     }
   },

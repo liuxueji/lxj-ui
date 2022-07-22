@@ -2,7 +2,9 @@
   <div class="container">
     <xj-float-ball :x=0
                    :y=0.5
-                   :isShow="true">
+                   :isShow="true"
+                   @click="click"
+                   @rightClick="rightClick">
       <img width="50px"
            height="50px"
            src="../assets/floatBall.png" />
@@ -17,6 +19,12 @@ export default {
     };
   },
   methods: {
+    click (data) {
+      console.log('左键点击', data);
+    },
+    rightClick (data) {
+      console.log('右键点击', data);
+    }
   },
 };
 </script>

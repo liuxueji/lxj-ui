@@ -197,6 +197,17 @@
 
 ![](https://liuxueji.oss-cn-guangzhou.aliyuncs.com/image-20220712092110957.png)
 
+# 十三、floatBall
+
+| 参数名称 | 参数描述       | 参数类型 | 默认值 |
+| -------- | -------------- | -------- | ------ |
+| x        | 需要展示的数据 | Array    | 无     |
+| y        | 组件宽度       | Number   | 400    |
+| isShow   | 组件高度       | Number   | 500    |
+|          |                |          |        |
+|          |                |          |        |
+|          |                |          |        |
+
 ## demo
 
 代码
