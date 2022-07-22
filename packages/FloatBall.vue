@@ -35,7 +35,7 @@ export default {
     // 是否显示悬浮球
     isShow: {
       type: Boolean,
-      default: false
+      default: true
     }
   },
   data () {

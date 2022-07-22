@@ -32,6 +32,6 @@ export default {
   .container {
     width: 500px;
     height: 800px;
-    background-color: #ffcc00;
+    border: 1px solid #ffc300;
   }
 </style>
