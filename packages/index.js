@@ -14,6 +14,7 @@ import FormItem from './Form-item'
 import ProgressBar from './ProgressBar'
 import WordCloud from './WordCloud'
 import FloatBall from './FloatBall'
+import Slide from './Slide'
 
 const components = [
   Button,
@@ -28,7 +29,8 @@ const components = [
   FormItem,
   ProgressBar,
   WordCloud,
-  FloatBall
+  FloatBall,
+  Slide
 ]
 // 定义install方法
 const install = function (Vue) {

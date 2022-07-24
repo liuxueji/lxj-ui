@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import WordCloud from '../components/WordCloud'
 import FloatBall from '../components/FloatBall'
+import ProgressBarDemo from '../components/ProgressBarDemo'
+import SlideDemo from '../components/SlideDemo'
 Vue.use(VueRouter)
 
 // 配置路由
@@ -11,6 +13,12 @@ const routes = [{
 }, {
   path: '/FloatBall',
   component: FloatBall
+}, {
+  path: '/ProgressBarDemo',
+  component: ProgressBarDemo
+}, {
+  path: '/SlideDemo',
+  component: SlideDemo
 }]
 // 实例化路由
 const router = new VueRouter({
