@@ -2,7 +2,9 @@
   <div>
     <xj-slide @getMsg="getMsg"
               :limit='100'
-              :width='600'></xj-slide>
+              :width='300'
+              :height='50'
+              :fontSize='20'></xj-slide>
     <div>状态码:{{msg}}</div>
   </div>
 </template>

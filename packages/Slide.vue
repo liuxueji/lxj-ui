@@ -1,6 +1,6 @@
 <template>
   <div class="container"
-       :style="{width:width+'px',height:height+'px',lineHeight:height+'px'}">
+       :style="{width:width+'px',height:height+'px',lineHeight:height+'px',fontSize:fontSize+'px'}">
     <div>{{ tip }}</div>
     <div :class="['progressFinish',{transition}]"
          :style="{left: '-'+max+'px', transform:'translateX('+x+'px)'}">
@@ -46,6 +46,10 @@ export default {
     height: {
       type: Number,
       default: 50
+    },
+    fontSize: {
+      type: Number,
+      default: 24
     }
   },
   mounted () {
@@ -126,12 +130,9 @@ export default {
 
 <style>
   .container {
-    height: 80px;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
-    line-height: 80px;
-    font-size: 32px;
     position: relative;
     overflow: hidden;
   }

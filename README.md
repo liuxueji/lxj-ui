@@ -207,6 +207,27 @@
 
 ![floatBall](https://liuxueji.oss-cn-guangzhou.aliyuncs.com/img/floatBall.gif)
 
+# 十四、slide
+
+### 1.参数支持
+
+| 参数名称 | 参数描述       | 参数类型 | 默认值 |
+| -------- | -------------- | -------- | ------ |
+| width    | 滑块宽度       | Number   | 300    |
+| height   | 滑块高度       | Number   | 50     |
+| fontSize | 文字大小       | Number   | 24     |
+| limit    | 滑块的速率限制 | Number   | 100    |
+
+### 2.事件支持
+
+| 事件名称 | 事件描述             |
+| -------- | -------------------- |
+| getMsg   | 验证通过或不通过事件 |
+
+### 3.样式参考
+
+![slide](https://liuxueji.oss-cn-guangzhou.aliyuncs.com/img/slide.gif)
+
 ## demo
 
 代码
